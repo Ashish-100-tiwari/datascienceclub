@@ -10,15 +10,12 @@ export default function Nav(){
           <h1 className="text-xl font-semibold ml-2">Recommender App</h1>
         </div>
       </div>
-
-      <div className="flex items-center space-x-4">
-        {/* Navigation Options for Larger Screens */}
-        <ul className="hidden sm:flex space-x-4">
+      <ul className=" space-x-4 flex items-center">
           <li className="cursor-pointer">Projects</li>
           <li className="cursor-pointer">Learning</li>
           <li className="cursor-pointer">Job post</li>
         </ul>
-      </div>
+
     </nav>
   )
 }
