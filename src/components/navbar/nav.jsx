@@ -38,7 +38,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         {menuOpen && (
           <div className="sm:hidden">
             <ul className="flex flex-col space-y-2 items-center">
-              <Link href="http://localhost:3000/project">Project</Link>
+              <Link href="/project">Project</Link>
               <Link href="/learning">Learning</Link>
               <Link href="/community">Job post</Link>
             </ul>
@@ -47,7 +47,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         {/* Navigation Options for Larger Screens */}
         <ul className="hidden sm:flex space-x-4">
-          <Link href="http://localhost:3000/project">Project</Link>
+          <Link href="/project">Project</Link>
           <Link href="/learning">Learning</Link>
           <Link href="/community">Job post</Link>
         </ul>
