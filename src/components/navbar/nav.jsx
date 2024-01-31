@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
@@ -17,8 +18,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     >
       <div className="flex items-center">
         <div className="flex items-center">
-          <Image src="/mlogo.png" width={20} height={20} alt="Logo" />
-          <h1 className="text-xl font-semibold ml-2">Recommender App</h1>
+          <Link href={"/"}><Image src="/mlogo.png"  width={20} height={20} alt="Logo" /></Link>
+          <Link href={"/"}><h1 className="text-xl font-semibold ml-2">Recommender App</h1></Link>
         </div>
       </div>
 
@@ -37,18 +38,18 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         {menuOpen && (
           <div className="sm:hidden">
             <ul className="flex flex-col space-y-2 items-center">
-              <li className="cursor-pointer">Projects</li>
-              <li className="cursor-pointer">Learning</li>
-              <li className="cursor-pointer">Job post</li>
+              <Link href="http://localhost:3000/project">Project</Link>
+              <Link href="/learning">Learning</Link>
+              <Link href="/community">Job post</Link>
             </ul>
           </div>
         )}
 
         {/* Navigation Options for Larger Screens */}
         <ul className="hidden sm:flex space-x-4">
-          <li className="cursor-pointer">Projects</li>
-          <li className="cursor-pointer">Learning</li>
-          <li className="cursor-pointer">Job post</li>
+          <Link href="http://localhost:3000/project">Project</Link>
+          <Link href="/learning">Learning</Link>
+          <Link href="/community">Job post</Link>
         </ul>
 
         {/* Dark Mode Toggle */}
