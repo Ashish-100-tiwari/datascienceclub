@@ -19,7 +19,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="flex items-center">
         <div className="flex items-center">
           <Link href={"/"}><Image src="/mlogo.png"  width={20} height={20} alt="Logo" /></Link>
-          <Link href={"/"}><h1 className="text-xl font-semibold ml-2">Recommender App</h1></Link>
+          <Link href={"/"}><h1 className="text-xl font-semibold ml-2">Data science Club</h1></Link>
         </div>
       </div>
 
