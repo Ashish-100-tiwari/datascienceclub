@@ -5,10 +5,10 @@ const Header = () => {
     <div className="flex items-center h-screen  justify-center w-auto text-white bg-blue-800">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">
-            Welcome to Your Recommender App
+            Welcome to Data Science Club
           </h1>
           <p className="text-lg">
-            Discover personalized recommendations just for you.
+            Learning Platform For Future Scientist.
           </p>
         </div>
       </div>
