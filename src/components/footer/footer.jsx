@@ -4,8 +4,8 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Import s
 const Footer = ({ darkMode }) => {
   return (
     <footer
-      className={`bg-gray-800 text-white p-28  ${
-        darkMode ? "bg-gray-900 text-white" : "bg-slate-100 text-gray-800"
+      className={`bg-gray-800 text-white p-28   ${
+        darkMode ? "bg-gray-900 text-white border-t-2 border-rose-900" : "bg-slate-100 text-gray-800 border-t-2 border-gray-500"
       }`}
     >
       <div

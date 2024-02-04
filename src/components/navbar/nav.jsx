@@ -13,7 +13,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav
       className={`flex flex-col sm:flex-row items-center justify-between p-5 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-slate-100 text-gray-800"
+        darkMode ? "bg-gray-900 text-white border-b-2 border-rose-900 " : "bg-slate-100 text-gray-800 border-b-2 border-gray-500"
       }`}
     >
       <div className="flex items-center">
