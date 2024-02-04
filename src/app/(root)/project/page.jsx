@@ -3,7 +3,6 @@ import Footer from '@/components/footer/footer';
 import Header from '@/components/header/header';
 import Navbar from '@/components/navbar/nav'
 import { useGlobalContext } from '@/context/store';
-import React, { useState } from 'react'
 
 const Page = () => {
    const{setDarkMode,darkMode}=useGlobalContext()

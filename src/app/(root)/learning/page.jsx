@@ -2,7 +2,6 @@
 import Footer from '@/components/footer/footer';
 import Navbar from '@/components/navbar/nav'
 import data from "../../../data/learning.json"
-import React, { useState } from 'react'
 import { useGlobalContext } from '@/context/store';
 
 const Page = () => {
