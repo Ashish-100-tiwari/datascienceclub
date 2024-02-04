@@ -2,10 +2,11 @@
 import Footer from '@/components/footer/footer';
 import Header from '@/components/header/header';
 import Navbar from '@/components/navbar/nav'
+import { useGlobalContext } from '@/context/store';
 import React, { useState } from 'react'
 
 const Page = () => {
-  const [darkMode, setDarkMode] = useState(false);
+   const{setDarkMode,darkMode}=useGlobalContext();
   return (
     <div>
       <Navbar setDarkMode={setDarkMode} darkMode={darkMode}/>
