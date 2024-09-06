@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import dsc from '../../assets/jpeg/dsc.jpg'
 import React, { useState } from "react";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
@@ -18,7 +19,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     >
       <div className="flex items-center">
         <div className="flex items-center">
-          <Link href={"/"}><Image src="/mlogo.png"  width={20} height={20} alt="Logo" /></Link>
+          <Link href={"/"}><Image src={dsc}  width={60} height={60} alt="Logo" className=" rounded-md" /></Link>
           <Link href={"/"}><h1 className="text-xl font-semibold ml-2">Data science Club</h1></Link>
         </div>
       </div>
