@@ -14,9 +14,9 @@ const Footer = ({ darkMode }) => {
         }`}
       >
         <div className="mb-4 lg:mb-0">
-          <h2 className="text-lg font-semibold mb-1">Recommender App</h2>
+          <h2 className="text-lg font-semibold mb-1">Data Science Club</h2>
           <p className="text-sm">
-            Discover personalized recommendations just for you.
+            Data Science Club for Student
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const Footer = ({ darkMode }) => {
         <p className={` text-xs ${
           darkMode ? "text-white" : "text-gray-800"
         }`}>
-          &copy; {new Date().getFullYear()} Recommender App. All rights
+          &copy; {new Date().getFullYear()} Data Science Club. All rights
           reserved.
         </p>
       </div>

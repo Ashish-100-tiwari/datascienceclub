@@ -41,7 +41,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <ul className="flex flex-col space-y-2 items-center">
               <Link href="/project">Project</Link>
               <Link href="/learning">Learning</Link>
-              <Link href="/community">Job post</Link>
+              <Link href="/ainews">AI News</Link>
             </ul>
           </div>
         )}
@@ -50,7 +50,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <ul className="hidden sm:flex space-x-4">
           <Link href="/project">Project</Link>
           <Link href="/learning">Learning</Link>
-          <Link href="/community">Job post</Link>
+          <Link href="/ainews">Ai News</Link>
         </ul>
 
         {/* Dark Mode Toggle */}
