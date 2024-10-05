@@ -1,14 +1,10 @@
 import { matplotlib, numpy, pandas, student } from '@/assets';
-import { useGlobalContext } from '@/context/store';
 import Image from 'next/image';
 import React from 'react';
-
+import techData from '@/data/techData.json';
 const Header = () => {
-  const { darkMode } = useGlobalContext();
-
   return (
     <>
-      
       {/* Space-themed Complex Animation */}
       <div className="relative w-full h-screen bg-gradient-to-b from-blue-900 to-black overflow-hidden flex justify-center items-center text-white">
         {/* Central Student Face */}
@@ -44,16 +40,28 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div
-        className={`flex items-center h-[400px] justify-center ${
-          darkMode ? 'bg-gray-900 text-white' : 'bg-slate-100 text-gray-800'
-        }`}
-      >
+
+      {/* Static Section */}
+      <div className="flex items-center h-[400px] justify-center bg-gray-900 text-white">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome to Data Science Club</h1>
           <p className="text-lg">Learning Platform For Future Scientists.</p>
         </div>
       </div>
+      
+       <div className="flex justify-center bg-gray-900 pb-10 pt-10">
+      <div>
+        <h1 className="text-2xl font-bold text-center text-white mb-4">Technologies in Data Science</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {techData.map((tech) => (
+            <div key={tech.key} className="bg-gray-800 text-white p-6 rounded-md shadow-md">
+              <h2 className="text-xl font-bold mb-2">{tech.name}</h2>
+              <p className="text-sm opacity-75">{tech.techcategory}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
     </>
   );
 };

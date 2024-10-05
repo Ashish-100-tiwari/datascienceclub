@@ -1,0 +1,22 @@
+[
+    {"key": 1, "name": "NumPy", "techcategory": "Data Science"},
+    {"key": 2, "name": "Pandas", "techcategory": "Data Science"},
+    {"key": 3, "name": "Matplotlib", "techcategory": "Data Visualization"},
+    {"key": 4, "name": "Seaborn", "techcategory": "Data Visualization"},
+    {"key": 5, "name": "Scikit-learn", "techcategory": "Machine Learning"},
+    {"key": 6, "name": "TensorFlow", "techcategory": "Deep Learning"},
+    {"key": 7, "name": "PyTorch", "techcategory": "Deep Learning"},
+    {"key": 8, "name": "Keras", "techcategory": "Deep Learning"},
+    {"key": 9, "name": "OpenCV", "techcategory": "Computer Vision"},
+    {"key": 10, "name": "NLTK", "techcategory": "Natural Language Processing"},
+    {"key": 11, "name": "Beautiful Soup", "techcategory": "Web Scraping"},
+    {"key": 12, "name": "Statsmodels", "techcategory": "Statistics"},
+    {"key": 13, "name": "Jupyter Notebooks", "techcategory": "Data Science"},
+    {"key": 14, "name": "Pandas Profiling", "techcategory": "Data Science"},
+    {"key": 15, "name": "Dask", "techcategory": "Parallel Computing"},
+    {"key": 16, "name": "XGBoost", "techcategory": "Machine Learning"},
+    {"key": 17, "name": "LightGBM", "techcategory": "Machine Learning"},
+    {"key": 18, "name": "Fastai", "techcategory": "Deep Learning"},
+    {"key": 19, "name": "Plotly", "techcategory": "Data Visualization"},
+    {"key": 20, "name": "Altair", "techcategory": "Data Visualization"}
+]

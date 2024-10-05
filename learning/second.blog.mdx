@@ -1,8 +1,29 @@
 ---
-title: My Second Blog
-date: 24th June 2023
-description: Welcome to my second blog in next.js app
+title: Mastering React Component Patterns
+date: 5th October 2024
+description: A comprehensive guide to React component patterns with detailed explanations and code snippets.
 ---
-This is my **second** blog post using *markdown*
 
-### My subheading for second blog
+## Introduction
+
+React component patterns are powerful tools for building scalable and maintainable applications. Understanding these patterns can help you write cleaner, more reusable code. In this post, we'll explore some of the most common and useful patterns in React.
+
+We'll cover:
+
+- Stateless Functional Components
+- Higher-Order Components (HOCs)
+- Render Props
+- Controlled vs Uncontrolled Components
+- Custom Hooks
+
+By the end of this post, you will have a solid understanding of how to use these patterns effectively in your React applications.
+
+## 1. Stateless Functional Components
+
+Stateless Functional Components are simple functions that accept props and return JSX. They do not have state or lifecycle methods, making them ideal for simple, reusable UI components.
+
+```jsx
+// Stateless Functional Component Example
+const Button = ({ label }) => {
+  return <button>{label}</button>;
+};

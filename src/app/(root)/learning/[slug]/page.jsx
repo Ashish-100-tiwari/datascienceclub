@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import Footer from '@/components/footer/footer';
+import Navbar from '@/components/navbar/nav';
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join('learning'));
@@ -30,7 +32,9 @@ export default function Page({ params }) {
   const props = getPost(params);
 
   return (
-    <article className="prose prose-sm md:prose-base lg:prose-lg mx-auto bg-white text-black">
+    <>
+    <Navbar/>
+    <article className="prose m-5 prose-sm md:prose-base lg:prose-lg mx-auto bg-white text-black">
       <h1 className="text-5xl font-bold">{props.frontMatter.title}</h1>
       <p className="text-lg mt-2">{props.frontMatter.description}</p>
       <MDXRemote
@@ -40,17 +44,19 @@ export default function Page({ params }) {
           h3: ({ children }) => <h3 className="text-2xl font-semibold">{children}</h3>,
           p: ({ children }) => <p className="text-base">{children}</p>,
           code: ({ children }) => (
-            <code className="bg-gray-800 text-white rounded px-1 py-0.5">
+            <code className=" text-white rounded px-1 py-0.5">
               {children}
             </code>
           ),
           pre: ({ children }) => (
-            <pre className="bg-gray-900 text-white rounded-lg p-4 overflow-auto">
+            <pre className=" text-white rounded-lg p-4 overflow-auto">
               {children}
             </pre>
           ),
         }}
       />
     </article>
+    <Footer/>
+    </>
   );
 }
