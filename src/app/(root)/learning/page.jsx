@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 async function fetchlearning() {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/learning`, {
-      cache: 'no-store', // Ensure fresh data
+      cache: 'no-store', 
     });
     if (!res.ok) {
       throw new Error('Failed to fetch blogs');
@@ -39,9 +39,9 @@ const Page = () => {
   return (
     <div>
       <Navbar setDarkMode={setDarkMode} darkMode={darkMode} />
-      <section className='py-10'>
+      <section className='py-10 ml-20'>
         <h2 className='text-2xl font-bold'>Learning</h2>
-        <div className='py-2'>
+        <div className='py-2 ml-20'>
           {learning.map((learning) => (
             <Link href={'/learning/' + learning.slug} passHref key={learning.slug}>
               <div className='py-2 flex justify-between items-center gap-2'>

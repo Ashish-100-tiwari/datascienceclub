@@ -8,16 +8,7 @@ const Header = () => {
 
   return (
     <>
-      <div
-        className={`flex items-center h-[400px] justify-center ${
-          darkMode ? 'bg-gray-900 text-white' : 'bg-slate-100 text-gray-800'
-        }`}
-      >
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Welcome to Data Science Club</h1>
-          <p className="text-lg">Learning Platform For Future Scientists.</p>
-        </div>
-      </div>
+      
       {/* Space-themed Complex Animation */}
       <div className="relative w-full h-screen bg-gradient-to-b from-blue-900 to-black overflow-hidden flex justify-center items-center text-white">
         {/* Central Student Face */}
@@ -51,6 +42,16 @@ const Header = () => {
             <div className="orbit spark"><h1>Spark</h1></div>
             <div className="orbit tableau"><h1>Tableau</h1></div>
           </div>
+        </div>
+      </div>
+      <div
+        className={`flex items-center h-[400px] justify-center ${
+          darkMode ? 'bg-gray-900 text-white' : 'bg-slate-100 text-gray-800'
+        }`}
+      >
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4">Welcome to Data Science Club</h1>
+          <p className="text-lg">Learning Platform For Future Scientists.</p>
         </div>
       </div>
     </>

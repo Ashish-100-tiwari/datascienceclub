@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import dsc from '../../assets/jpeg/dsc.jpg'
+import dsc from '../../assets/jpeg/dsc.jpg';
 import React, { useState } from "react";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
